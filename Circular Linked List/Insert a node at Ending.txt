@@ -1,0 +1,26 @@
+write a function to insert a node at ending in a circular linked list
+Sol:: void insert at ending()
+{
+struct node*ptr,*newnode;
+int elements;
+printf("\n enter elements to be insert");
+scanf("%d",&elements);
+newnode=(struct node*)malloc(size of (struct node));
+newnode->data=elements;
+newnode->next=start;
+if(start==NULL)
+{
+start=newnode;
+newnode->next=start;
+}
+else
+{
+ptr=start;
+while(ptr->next!=start)
+{
+ptr=ptr->next;
+}
+ptr->next=newnode;
+newnode->next=start;
+}
+}

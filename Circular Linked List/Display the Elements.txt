@@ -1,0 +1,16 @@
+write a function to display the elements in Circular Linked List
+Sol:: 
+void display()
+{
+struct node*ptr;
+ptr=start;
+while(ptr->next!=start)
+{
+printf("%d--->",ptr->data);
+}
+struct declaration of circular linked list
+struct node
+{
+int data;
+struct node*next;
+};

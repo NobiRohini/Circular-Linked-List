@@ -1,0 +1,23 @@
+write a function to insert a node at begining in a circular linked list
+Sol:: void insert at begining()
+{
+struct node*ptr,*newnode;
+scanf("%d",&elements);
+newnode->data=elements;
+newnode->next=start;
+if (start==NULL)
+{
+start=newnode;
+newnode->next=start;
+}
+else
+{
+ptr=start;
+while(ptr->next!=start)
+{
+ptr=ptr->next;
+}
+newnode->next=start;
+ptr->next=newnode;
+start=newnode;
+}}

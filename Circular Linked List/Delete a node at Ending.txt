@@ -1,0 +1,2 @@
+Write a function to delete a node at ending using circular linked list..?
+Sol::
